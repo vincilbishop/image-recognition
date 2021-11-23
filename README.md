@@ -9,6 +9,9 @@ Image recognition logic for testing.
 The following libraries are candidates for use in the solution:
 
 * https://github.com/aheckmann/gm 
+* https://www.npmjs.com/package/@google-cloud/vision
+
+The following libraries are interesting:
 * https://www.npmjs.com/package/opencv
 
 ## Installation
