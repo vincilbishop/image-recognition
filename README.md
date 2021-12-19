@@ -21,7 +21,14 @@ For the photo sets, I was thinking of using a batch of aerial aircraft or simply
 
 * Contrast: https://imagemagick.org/script/command-line-options.php#brightness-contrast
 * Sharpen: https://imagemagick.org/script/command-line-options.php#sharpen
-* Despeckle:
+* Despeckle: https://imagemagick.org/script/command-line-options.php#despeckle
+* Background Subtraction: 
+export JAVA_HOME=/Applications/Fiji.app/java/macosx/adoptopenjdk-8.jdk/jre/Contents/Home; /Applications/Fiji.app/Contents/MacOS/ImageJ-macosx --headless --console -macro ./subtract-background.java 'folder=./folder1 parameters=a.properties output=./samples/Output'
+
+--headless --console -macro ./subtract-background.java 'folder=../folder1 parameters=a.properties output=../samples/Output'
+
+/Applications/ImageJ.app/Contents/MacOS/ImageJ --headless --console -macro ./subtract-background.java 'folder=../folder1 parameters=a.properties output=../samples/Output'
+https://imagej.net/learn/headless
 
 ### Libraries
 
@@ -39,6 +46,7 @@ The following libraries are interesting:
 ### To install imagemagick & graphicsmagick
 
 ```bash
+$ brew install ImageJ
 $ brew install imagemagick
 $ # brew install graphicsmagick
 $ yarn add imagemagick
