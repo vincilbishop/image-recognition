@@ -15,4 +15,8 @@ describe('SharpenService', () => {
   it('should be defined', () => {
     expect(service).toBeDefined();
   });
+
+  it('should sharpen images', async () => {
+    return service.convert();
+  }, 300000);
 });

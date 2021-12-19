@@ -15,4 +15,8 @@ describe('ContrastService', () => {
   it('should be defined', () => {
     expect(service).toBeDefined();
   });
+
+  it('should adjust contrast', async () => {
+    return service.convert();
+  }, 30000);
 });

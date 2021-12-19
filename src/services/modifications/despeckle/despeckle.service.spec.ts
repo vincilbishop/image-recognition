@@ -15,4 +15,8 @@ describe('DespeckleService', () => {
   it('should be defined', () => {
     expect(service).toBeDefined();
   });
+
+  it('should despeckle images', async () => {
+    return service.convert();
+  }, 30000);
 });
