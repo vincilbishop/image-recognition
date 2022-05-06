@@ -14,9 +14,9 @@ export class AppService {
     private readonly bgsubtractService: BackgroundSubtractionService) {}
   async processImages() {
     const services: Convertible[] = [
-      // this.contrastService,
-      // this.sharpenService,
-      // this.despeckleService,
+      this.contrastService,
+      this.sharpenService,
+      this.despeckleService,
       this.bgsubtractService,
     ];
     for (const service of services) {

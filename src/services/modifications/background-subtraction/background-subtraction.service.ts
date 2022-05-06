@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { ModUtil } from 'src/util/mod-util';
+import { ModUtil } from '../../../util/mod-util';
 import { exec } from 'child_process';
 
 @Injectable()
@@ -16,7 +16,9 @@ export class BackgroundSubtractionService {
   
     async convertImage(input: string, output: string, percent: number) {
       return new Promise<any>((resolve, reject) => {
-        exec(`backgroundremover -i ${input} -o ${output}`, (error, stdout, stderr) => {
+        const command = `backgroundremover -i "${input}" -o "${output}"`;
+        console.log(command);
+        exec(command, (error, stdout, stderr) => {
             if (error) {
                 console.log(`error: ${error.message}`);
                 reject(error)
