@@ -11,12 +11,22 @@ export class ConfigUtil {
     }
 
     static get inputPath() {
-        const imageInputPath = path.join(__dirname, '../images/input/');
+        const imageInputPath = path.join(__dirname, '../images/base-input/');
         return imageInputPath;
     }
 
     static get outputPath() {
-        const imageInputPath = path.join(__dirname, '../images/output/');
+        const imageInputPath = path.join(__dirname, '../images/input/');
         return imageInputPath;
     }
+
+    // static get inputPath() {
+    //     const imageInputPath = path.join(__dirname, '../images/input/');
+    //     return imageInputPath;
+    // }
+
+    // static get outputPath() {
+    //     const imageInputPath = path.join(__dirname, '../images/output/');
+    //     return imageInputPath;
+    // }
 }

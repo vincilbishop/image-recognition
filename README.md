@@ -23,12 +23,18 @@ For the photo sets, I was thinking of using a batch of aerial aircraft or simply
 * Sharpen: https://imagemagick.org/script/command-line-options.php#sharpen
 * Despeckle: https://imagemagick.org/script/command-line-options.php#despeckle
 * Background Subtraction: 
+
+
+https://github.com/nadermx/backgroundremover
+
 export JAVA_HOME=/Applications/Fiji.app/java/macosx/adoptopenjdk-8.jdk/jre/Contents/Home; /Applications/Fiji.app/Contents/MacOS/ImageJ-macosx --headless --console -macro ./subtract-background.java 'folder=./folder1 parameters=a.properties output=./samples/Output'
 
 --headless --console -macro ./subtract-background.java 'folder=../folder1 parameters=a.properties output=../samples/Output'
 
 /Applications/ImageJ.app/Contents/MacOS/ImageJ --headless --console -macro ./subtract-background.java 'folder=../folder1 parameters=a.properties output=../samples/Output'
 https://imagej.net/learn/headless
+
+
 
 ### Libraries
 
@@ -85,3 +91,6 @@ $ npm run test:cov
 ## License
 
 [MIT licensed](LICENSE).
+
+## General Notes
+https://blog.risingstack.com/opencv-tutorial-computer-vision-with-node-js/
