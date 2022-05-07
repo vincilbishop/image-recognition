@@ -37,3 +37,7 @@ lerna-debug.log*
 
 src/images/output
 credentials.json
+.postgres/
+**/*.sav
+**/.output
+**/*.zip

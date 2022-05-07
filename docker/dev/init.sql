@@ -1,0 +1,5 @@
+CREATE DATABASE "app-dev";
+GRANT ALL PRIVILEGES ON DATABASE "app-dev" TO postgres;
+
+CREATE DATABASE "app-test";
+GRANT ALL PRIVILEGES ON DATABASE "app-test" TO postgres;
