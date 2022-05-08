@@ -10,7 +10,7 @@
     "prebuild": "rimraf dist",
     "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
-    "start": "ts-node ./src/main.ts",
+    "start": "GOOGLE_APPLICATION_CREDENTIALS=\"/Users/vincilbishop/Documents/Code/CSU/Image-Recognition/image-recognition/src/credentials.json\" ts-node ./src/main.ts",
     "start:nest": "nest start",
     "start:dev": "nest start --watch",
     "start:debug": "nest start --debug --watch",
@@ -44,7 +44,8 @@
     "db:seed:demo:create": "yarn typeorm migration:create -c demo-seed -n",
     "db:seed:revert": "yarn typeorm migration:revert -c seed",
     "db:sync": "yarn typeorm schema:sync",
-    "typeorm": "ts-node -r module-alias/register ./node_modules/typeorm/cli.js  --config ./src/ormconfig.ts"
+    "typeorm": "ts-node -r module-alias/register ./node_modules/typeorm/cli.js  --config ./src/ormconfig.ts",
+    "set_creds": "export GOOGLE_APPLICATION_CREDENTIALS=\"/Users/vincilbishop/Documents/Code/CSU/Image-Recognition/image-recognition/src/credentials.json\""
   },
   "dependencies": {
     "@google-cloud/vision": "^2.4.0",

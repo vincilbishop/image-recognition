@@ -6,7 +6,8 @@ async function bootstrap() {
   const app = await NestFactory.createApplicationContext(AppModule);
   app.init();
   const appService = app.get(AppService);
-  await appService.processImages();
+  // await appService.processImages();
+  await appService.annotateImages();
   app.close()
 }
 bootstrap();

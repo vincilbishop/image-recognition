@@ -14,6 +14,7 @@ export class ImageOperations1651936551830 implements MigrationInterface {
     for (const op of operations) {
       if (op === 'despeckle' || op === 'bgsubtract') {
         const newOp = new ImageOperation();
+        newOp.operationType = op;
         newOp.code = op;
         newOp.operationName = op;
         newOp.operationValue = 100;
@@ -22,6 +23,7 @@ export class ImageOperations1651936551830 implements MigrationInterface {
       } else {
         for (const value of values) {
           const newOp = new ImageOperation();
+          newOp.operationType = op;
           newOp.code = `${op}-${value}`;
           newOp.operationName = `${op} @ ${value}%`;
           newOp.operationValue = value;

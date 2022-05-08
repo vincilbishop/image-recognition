@@ -27,4 +27,8 @@ export class ImageModificationInstance extends BaseModelPrimaryId {
 
     @OneToMany(() => ImageModificationInstanceLabel, (label) => label.modification)
     labels: ImageModificationInstanceLabel[]
+
+    get subjectImageFilePath() {
+        return `${__dirname}/../images/output/${this.subjectImageFileName}`;
+    }
 }

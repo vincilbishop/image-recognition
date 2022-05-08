@@ -7,6 +7,9 @@ export class ImageOperation extends BaseModelPrimaryCode {
     @Column({ name: 'operation_name' })
     operationName: string;
 
+    @Column({ name: 'operation_type' })
+    operationType: string;
+
     @Column({ name: 'operation_value' })
     operationValue: number;
 }

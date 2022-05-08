@@ -2,7 +2,8 @@ import { ImageFile } from 'src/models/image-file';
 import { ImageModificationInstance } from 'src/models/image-modification-instance';
 import { ImageOperation } from 'src/models/image-operation';
 import { MigrationInterface, QueryRunner } from 'typeorm';
-
+import * as jetpack from 'fs-jetpack';
+import { exit } from 'process';
 export class ImageModificationInstances1651938419322
   implements MigrationInterface
 {
@@ -16,12 +17,12 @@ export class ImageModificationInstances1651938419322
     const operations = await opDb.find({});
     const files = await fileDb.find({});
 
-    const modsToSave = [];
+    const modsToSave = [] as ImageModificationInstance[];
 
     for (const file of files) {
       for (const op1 of operations) {
         for (const op2 of operations) {
-          if (op1.code !== op2.code) {
+          if (op1.code !== op2.code && op1.operationType !== op2.operationType) {
             const newMod = new ImageModificationInstance();
             newMod.originalImageFile = file;
             newMod.imageOp1 = op1;
@@ -31,6 +32,16 @@ export class ImageModificationInstances1651938419322
             modsToSave.push(newMod);
           }
         }
+      }
+    }
+
+    const modFiles = jetpack.list('src/images/output');
+
+    // Let's make sure all of out files are there...
+    for (const mod of modsToSave) {
+      if (modFiles.indexOf(mod.subjectImageFileName) < 0) {
+        console.log(`${mod.subjectImageFileName} Not Found!`)
+        throw new Error(`${mod.subjectImageFileName} Not Found!`);
       }
     }
 
