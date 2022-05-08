@@ -1,7 +1,9 @@
-# Image Recognition Testing
+# Enhanced Computer Vision Using Automated Optimized Neural Network Image Pre-Processing 
+# Reproduction Package
 
+## About
+This repository was prepared for the [IS&T Archiving Conference 2022](https://www.imaging.org/Site/IST/Conferences/Archiving/Archiving_Home)
 ## Description
-
 Image recognition logic for testing.
 
 The logic uses the following filters in 25% incremental increases:
