@@ -11,6 +11,9 @@ export class ImageModificationInstanceLabel extends BaseModelPrimaryId {
     @Column({ name: 'mid' })
     mid: string;
 
+    @Column({ name: 'max_topicality', nullable: true })
+    maxTopicality: boolean;
+
     @Column({ name: 'score', type: 'decimal' })
     score: number;
 

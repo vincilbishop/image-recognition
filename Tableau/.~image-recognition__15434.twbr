@@ -1,0 +1,2333 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20214.22.0325.1233                               -->
+<workbook original-version='18.1' source-build='2021.4.5 (20214.22.0325.1233)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelRelationshipPerfOptions.true...ObjectModelRelationshipPerfOptions />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='image_modification_instance+ (app-dev)' inline='true' name='federated.1v0nxj811pgn73175sx4k1rgcggz' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='localhost' name='postgres.0feerir0h28mry132hrc30kd7ygg'>
+            <connection authentication='username-password' class='postgres' dbname='app-dev' odbc-native-protocol='' one-time-sql='' port='5432' server='localhost' username='postgres' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='postgres.0feerir0h28mry132hrc30kd7ygg' name='image_file' table='[public].[image_file]' type='table' />
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation connection='postgres.0feerir0h28mry132hrc30kd7ygg' name='image_modification_instance' table='[public].[image_modification_instance]' type='table' />
+          <relation connection='postgres.0feerir0h28mry132hrc30kd7ygg' name='image_file' table='[public].[image_file]' type='table' />
+          <relation connection='postgres.0feerir0h28mry132hrc30kd7ygg' name='image_modification_instance1' table='[public].[image_modification_instance]' type='table' />
+          <relation connection='postgres.0feerir0h28mry132hrc30kd7ygg' name='image_modification_instance_label' table='[public].[image_modification_instance_label]' type='table' />
+          <relation connection='postgres.0feerir0h28mry132hrc30kd7ygg' name='image_modification_instance_object' table='[public].[image_modification_instance_object]' type='table' />
+          <relation connection='postgres.0feerir0h28mry132hrc30kd7ygg' name='image_operation' table='[public].[image_operation]' type='table' />
+          <relation connection='postgres.0feerir0h28mry132hrc30kd7ygg' name='image_operation1' table='[public].[image_operation]' type='table' />
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[average_detected_score (image_modification_instance1)]' value='[image_modification_instance1].[average_detected_score]' />
+          <map key='[average_detected_score]' value='[image_modification_instance].[average_detected_score]' />
+          <map key='[average_label_score (image_modification_instance1)]' value='[image_modification_instance1].[average_label_score]' />
+          <map key='[average_label_score]' value='[image_modification_instance].[average_label_score]' />
+          <map key='[average_object_score (image_modification_instance1)]' value='[image_modification_instance1].[average_object_score]' />
+          <map key='[average_object_score]' value='[image_modification_instance].[average_object_score]' />
+          <map key='[code (image_file)]' value='[image_file].[code]' />
+          <map key='[code (image_operation1)]' value='[image_operation1].[code]' />
+          <map key='[code]' value='[image_operation].[code]' />
+          <map key='[created_at (image_file)]' value='[image_file].[created_at]' />
+          <map key='[created_at (image_modification_instance1)]' value='[image_modification_instance1].[created_at]' />
+          <map key='[created_at (image_modification_instance_label)]' value='[image_modification_instance_label].[created_at]' />
+          <map key='[created_at (image_modification_instance_object)]' value='[image_modification_instance_object].[created_at]' />
+          <map key='[created_at (image_operation)]' value='[image_operation].[created_at]' />
+          <map key='[created_at (image_operation1)]' value='[image_operation1].[created_at]' />
+          <map key='[created_at]' value='[image_modification_instance].[created_at]' />
+          <map key='[description]' value='[image_modification_instance_label].[description]' />
+          <map key='[detected_label_count (image_modification_instance1)]' value='[image_modification_instance1].[detected_label_count]' />
+          <map key='[detected_label_count]' value='[image_modification_instance].[detected_label_count]' />
+          <map key='[detected_object_count (image_modification_instance1)]' value='[image_modification_instance1].[detected_object_count]' />
+          <map key='[detected_object_count]' value='[image_modification_instance].[detected_object_count]' />
+          <map key='[detected_total_count (image_modification_instance1)]' value='[image_modification_instance1].[detected_total_count]' />
+          <map key='[detected_total_count]' value='[image_modification_instance].[detected_total_count]' />
+          <map key='[display_name (image_file)]' value='[image_file].[display_name]' />
+          <map key='[display_name (image_operation1)]' value='[image_operation1].[display_name]' />
+          <map key='[display_name]' value='[image_operation].[display_name]' />
+          <map key='[id (image_modification_instance1)]' value='[image_modification_instance1].[id]' />
+          <map key='[id (image_modification_instance_label)]' value='[image_modification_instance_label].[id]' />
+          <map key='[id (image_modification_instance_object)]' value='[image_modification_instance_object].[id]' />
+          <map key='[id]' value='[image_modification_instance].[id]' />
+          <map key='[image_modification (image_modification_instance_object)]' value='[image_modification_instance_object].[image_modification]' />
+          <map key='[image_modification]' value='[image_modification_instance_label].[image_modification]' />
+          <map key='[image_operation_1 (image_modification_instance1)]' value='[image_modification_instance1].[image_operation_1]' />
+          <map key='[image_operation_1]' value='[image_modification_instance].[image_operation_1]' />
+          <map key='[image_operation_2 (image_modification_instance1)]' value='[image_modification_instance1].[image_operation_2]' />
+          <map key='[image_operation_2]' value='[image_modification_instance].[image_operation_2]' />
+          <map key='[max_topicality]' value='[image_modification_instance_label].[max_topicality]' />
+          <map key='[meta_data (image_file)]' value='[image_file].[meta_data]' />
+          <map key='[meta_data (image_modification_instance1)]' value='[image_modification_instance1].[meta_data]' />
+          <map key='[meta_data (image_modification_instance_label)]' value='[image_modification_instance_label].[meta_data]' />
+          <map key='[meta_data (image_modification_instance_object)]' value='[image_modification_instance_object].[meta_data]' />
+          <map key='[meta_data (image_operation)]' value='[image_operation].[meta_data]' />
+          <map key='[meta_data (image_operation1)]' value='[image_operation1].[meta_data]' />
+          <map key='[meta_data]' value='[image_modification_instance].[meta_data]' />
+          <map key='[mid (image_modification_instance_object)]' value='[image_modification_instance_object].[mid]' />
+          <map key='[mid]' value='[image_modification_instance_label].[mid]' />
+          <map key='[modification_description (image_modification_instance1)]' value='[image_modification_instance1].[modification_description]' />
+          <map key='[modification_description]' value='[image_modification_instance].[modification_description]' />
+          <map key='[name]' value='[image_modification_instance_object].[name]' />
+          <map key='[operation_name (image_operation1)]' value='[image_operation1].[operation_name]' />
+          <map key='[operation_name]' value='[image_operation].[operation_name]' />
+          <map key='[operation_type (image_operation1)]' value='[image_operation1].[operation_type]' />
+          <map key='[operation_type]' value='[image_operation].[operation_type]' />
+          <map key='[operation_value (image_operation1)]' value='[image_operation1].[operation_value]' />
+          <map key='[operation_value]' value='[image_operation].[operation_value]' />
+          <map key='[original_image_file (image_modification_instance1)]' value='[image_modification_instance1].[original_image_file]' />
+          <map key='[original_image_file]' value='[image_modification_instance].[original_image_file]' />
+          <map key='[original_image_modification]' value='[image_file].[original_image_modification]' />
+          <map key='[score (image_modification_instance_object)]' value='[image_modification_instance_object].[score]' />
+          <map key='[score]' value='[image_modification_instance_label].[score]' />
+          <map key='[stdv_detected_score (image_modification_instance1)]' value='[image_modification_instance1].[stdv_detected_score]' />
+          <map key='[stdv_detected_score]' value='[image_modification_instance].[stdv_detected_score]' />
+          <map key='[stdv_label_score (image_modification_instance1)]' value='[image_modification_instance1].[stdv_label_score]' />
+          <map key='[stdv_label_score]' value='[image_modification_instance].[stdv_label_score]' />
+          <map key='[stdv_object_score (image_modification_instance1)]' value='[image_modification_instance1].[stdv_object_score]' />
+          <map key='[stdv_object_score]' value='[image_modification_instance].[stdv_object_score]' />
+          <map key='[subject_image_file_name (image_modification_instance1)]' value='[image_modification_instance1].[subject_image_file_name]' />
+          <map key='[subject_image_file_name]' value='[image_modification_instance].[subject_image_file_name]' />
+          <map key='[tag (image_file)]' value='[image_file].[tag]' />
+          <map key='[tag (image_modification_instance1)]' value='[image_modification_instance1].[tag]' />
+          <map key='[tag (image_modification_instance_label)]' value='[image_modification_instance_label].[tag]' />
+          <map key='[tag (image_modification_instance_object)]' value='[image_modification_instance_object].[tag]' />
+          <map key='[tag (image_operation)]' value='[image_operation].[tag]' />
+          <map key='[tag (image_operation1)]' value='[image_operation1].[tag]' />
+          <map key='[tag]' value='[image_modification_instance].[tag]' />
+          <map key='[topicality]' value='[image_modification_instance_label].[topicality]' />
+          <map key='[updated_at (image_file)]' value='[image_file].[updated_at]' />
+          <map key='[updated_at (image_modification_instance1)]' value='[image_modification_instance1].[updated_at]' />
+          <map key='[updated_at (image_modification_instance_label)]' value='[image_modification_instance_label].[updated_at]' />
+          <map key='[updated_at (image_modification_instance_object)]' value='[image_modification_instance_object].[updated_at]' />
+          <map key='[updated_at (image_operation)]' value='[image_operation].[updated_at]' />
+          <map key='[updated_at (image_operation1)]' value='[image_operation1].[updated_at]' />
+          <map key='[updated_at]' value='[image_modification_instance].[updated_at]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>meta_data</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[meta_data]</local-name>
+            <parent-name>[image_modification_instance]</parent-name>
+            <remote-alias>meta_data</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>8190</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[image_modification_instance_9D7641EEC4DD4ABABD3A3750B64443F3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tag</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[tag]</local-name>
+            <parent-name>[image_modification_instance]</parent-name>
+            <remote-alias>tag</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>256</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[image_modification_instance_9D7641EEC4DD4ABABD3A3750B64443F3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>created_at</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[created_at]</local-name>
+            <parent-name>[image_modification_instance]</parent-name>
+            <remote-alias>created_at</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TYPE_TIMESTAMP&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_TYPE_TIMESTAMP&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[image_modification_instance_9D7641EEC4DD4ABABD3A3750B64443F3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>updated_at</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[updated_at]</local-name>
+            <parent-name>[image_modification_instance]</parent-name>
+            <remote-alias>updated_at</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TYPE_TIMESTAMP&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_TYPE_TIMESTAMP&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[image_modification_instance_9D7641EEC4DD4ABABD3A3750B64443F3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>id</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[id]</local-name>
+            <parent-name>[image_modification_instance]</parent-name>
+            <remote-alias>id</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[image_modification_instance_9D7641EEC4DD4ABABD3A3750B64443F3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>subject_image_file_name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[subject_image_file_name]</local-name>
+            <parent-name>[image_modification_instance]</parent-name>
+            <remote-alias>subject_image_file_name</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[image_modification_instance_9D7641EEC4DD4ABABD3A3750B64443F3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>modification_description</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[modification_description]</local-name>
+            <parent-name>[image_modification_instance]</parent-name>
+            <remote-alias>modification_description</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[image_modification_instance_9D7641EEC4DD4ABABD3A3750B64443F3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>detected_total_count</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[detected_total_count]</local-name>
+            <parent-name>[image_modification_instance]</parent-name>
+            <remote-alias>detected_total_count</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[image_modification_instance_9D7641EEC4DD4ABABD3A3750B64443F3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>detected_label_count</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[detected_label_count]</local-name>
+            <parent-name>[image_modification_instance]</parent-name>
+            <remote-alias>detected_label_count</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[image_modification_instance_9D7641EEC4DD4ABABD3A3750B64443F3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>detected_object_count</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[detected_object_count]</local-name>
+            <parent-name>[image_modification_instance]</parent-name>
+            <remote-alias>detected_object_count</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[image_modification_instance_9D7641EEC4DD4ABABD3A3750B64443F3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>average_object_score</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[average_object_score]</local-name>
+            <parent-name>[image_modification_instance]</parent-name>
+            <remote-alias>average_object_score</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>28</precision>
+            <scale>6</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_NUMERIC&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_NUMERIC&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[image_modification_instance_9D7641EEC4DD4ABABD3A3750B64443F3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>stdv_object_score</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[stdv_object_score]</local-name>
+            <parent-name>[image_modification_instance]</parent-name>
+            <remote-alias>stdv_object_score</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>28</precision>
+            <scale>6</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_NUMERIC&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_NUMERIC&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[image_modification_instance_9D7641EEC4DD4ABABD3A3750B64443F3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>average_label_score</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[average_label_score]</local-name>
+            <parent-name>[image_modification_instance]</parent-name>
+            <remote-alias>average_label_score</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>28</precision>
+            <scale>6</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_NUMERIC&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_NUMERIC&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[image_modification_instance_9D7641EEC4DD4ABABD3A3750B64443F3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>stdv_label_score</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[stdv_label_score]</local-name>
+            <parent-name>[image_modification_instance]</parent-name>
+            <remote-alias>stdv_label_score</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>28</precision>
+            <scale>6</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_NUMERIC&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_NUMERIC&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[image_modification_instance_9D7641EEC4DD4ABABD3A3750B64443F3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>average_detected_score</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[average_detected_score]</local-name>
+            <parent-name>[image_modification_instance]</parent-name>
+            <remote-alias>average_detected_score</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>28</precision>
+            <scale>6</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_NUMERIC&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_NUMERIC&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[image_modification_instance_9D7641EEC4DD4ABABD3A3750B64443F3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>stdv_detected_score</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[stdv_detected_score]</local-name>
+            <parent-name>[image_modification_instance]</parent-name>
+            <remote-alias>stdv_detected_score</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>28</precision>
+            <scale>6</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_NUMERIC&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_NUMERIC&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[image_modification_instance_9D7641EEC4DD4ABABD3A3750B64443F3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>image_operation_1</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[image_operation_1]</local-name>
+            <parent-name>[image_modification_instance]</parent-name>
+            <remote-alias>image_operation_1</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>256</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[image_modification_instance_9D7641EEC4DD4ABABD3A3750B64443F3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>image_operation_2</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[image_operation_2]</local-name>
+            <parent-name>[image_modification_instance]</parent-name>
+            <remote-alias>image_operation_2</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>256</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[image_modification_instance_9D7641EEC4DD4ABABD3A3750B64443F3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>original_image_file</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[original_image_file]</local-name>
+            <parent-name>[image_modification_instance]</parent-name>
+            <remote-alias>original_image_file</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>256</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[image_modification_instance_9D7641EEC4DD4ABABD3A3750B64443F3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>meta_data</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[meta_data (image_file)]</local-name>
+            <parent-name>[image_file]</parent-name>
+            <remote-alias>meta_data</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>8190</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[image_file_B02B073336C042B089757A16ED8FE463]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tag</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[tag (image_file)]</local-name>
+            <parent-name>[image_file]</parent-name>
+            <remote-alias>tag</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>256</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[image_file_B02B073336C042B089757A16ED8FE463]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>created_at</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[created_at (image_file)]</local-name>
+            <parent-name>[image_file]</parent-name>
+            <remote-alias>created_at</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TYPE_TIMESTAMP&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_TYPE_TIMESTAMP&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[image_file_B02B073336C042B089757A16ED8FE463]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>updated_at</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[updated_at (image_file)]</local-name>
+            <parent-name>[image_file]</parent-name>
+            <remote-alias>updated_at</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TYPE_TIMESTAMP&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_TYPE_TIMESTAMP&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[image_file_B02B073336C042B089757A16ED8FE463]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>code</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[code (image_file)]</local-name>
+            <parent-name>[image_file]</parent-name>
+            <remote-alias>code</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>256</width>
+            <contains-null>false</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[image_file_B02B073336C042B089757A16ED8FE463]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>display_name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[display_name (image_file)]</local-name>
+            <parent-name>[image_file]</parent-name>
+            <remote-alias>display_name</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[image_file_B02B073336C042B089757A16ED8FE463]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>original_image_modification</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[original_image_modification]</local-name>
+            <parent-name>[image_file]</parent-name>
+            <remote-alias>original_image_modification</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[image_file_B02B073336C042B089757A16ED8FE463]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>meta_data</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[meta_data (image_modification_instance1)]</local-name>
+            <parent-name>[image_modification_instance1]</parent-name>
+            <remote-alias>meta_data</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>8190</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[image_modification_instance_137BE258AABF4761B29A9C956A16F447]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tag</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[tag (image_modification_instance1)]</local-name>
+            <parent-name>[image_modification_instance1]</parent-name>
+            <remote-alias>tag</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>256</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[image_modification_instance_137BE258AABF4761B29A9C956A16F447]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>created_at</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[created_at (image_modification_instance1)]</local-name>
+            <parent-name>[image_modification_instance1]</parent-name>
+            <remote-alias>created_at</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TYPE_TIMESTAMP&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_TYPE_TIMESTAMP&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[image_modification_instance_137BE258AABF4761B29A9C956A16F447]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>updated_at</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[updated_at (image_modification_instance1)]</local-name>
+            <parent-name>[image_modification_instance1]</parent-name>
+            <remote-alias>updated_at</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TYPE_TIMESTAMP&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_TYPE_TIMESTAMP&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[image_modification_instance_137BE258AABF4761B29A9C956A16F447]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>id</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[id (image_modification_instance1)]</local-name>
+            <parent-name>[image_modification_instance1]</parent-name>
+            <remote-alias>id</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[image_modification_instance_137BE258AABF4761B29A9C956A16F447]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>subject_image_file_name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[subject_image_file_name (image_modification_instance1)]</local-name>
+            <parent-name>[image_modification_instance1]</parent-name>
+            <remote-alias>subject_image_file_name</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[image_modification_instance_137BE258AABF4761B29A9C956A16F447]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>modification_description</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[modification_description (image_modification_instance1)]</local-name>
+            <parent-name>[image_modification_instance1]</parent-name>
+            <remote-alias>modification_description</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[image_modification_instance_137BE258AABF4761B29A9C956A16F447]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>detected_total_count</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[detected_total_count (image_modification_instance1)]</local-name>
+            <parent-name>[image_modification_instance1]</parent-name>
+            <remote-alias>detected_total_count</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[image_modification_instance_137BE258AABF4761B29A9C956A16F447]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>detected_label_count</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[detected_label_count (image_modification_instance1)]</local-name>
+            <parent-name>[image_modification_instance1]</parent-name>
+            <remote-alias>detected_label_count</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[image_modification_instance_137BE258AABF4761B29A9C956A16F447]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>detected_object_count</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[detected_object_count (image_modification_instance1)]</local-name>
+            <parent-name>[image_modification_instance1]</parent-name>
+            <remote-alias>detected_object_count</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[image_modification_instance_137BE258AABF4761B29A9C956A16F447]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>average_object_score</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[average_object_score (image_modification_instance1)]</local-name>
+            <parent-name>[image_modification_instance1]</parent-name>
+            <remote-alias>average_object_score</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>28</precision>
+            <scale>6</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_NUMERIC&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_NUMERIC&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[image_modification_instance_137BE258AABF4761B29A9C956A16F447]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>stdv_object_score</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[stdv_object_score (image_modification_instance1)]</local-name>
+            <parent-name>[image_modification_instance1]</parent-name>
+            <remote-alias>stdv_object_score</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>28</precision>
+            <scale>6</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_NUMERIC&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_NUMERIC&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[image_modification_instance_137BE258AABF4761B29A9C956A16F447]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>average_label_score</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[average_label_score (image_modification_instance1)]</local-name>
+            <parent-name>[image_modification_instance1]</parent-name>
+            <remote-alias>average_label_score</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>28</precision>
+            <scale>6</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_NUMERIC&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_NUMERIC&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[image_modification_instance_137BE258AABF4761B29A9C956A16F447]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>stdv_label_score</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[stdv_label_score (image_modification_instance1)]</local-name>
+            <parent-name>[image_modification_instance1]</parent-name>
+            <remote-alias>stdv_label_score</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>28</precision>
+            <scale>6</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_NUMERIC&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_NUMERIC&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[image_modification_instance_137BE258AABF4761B29A9C956A16F447]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>average_detected_score</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[average_detected_score (image_modification_instance1)]</local-name>
+            <parent-name>[image_modification_instance1]</parent-name>
+            <remote-alias>average_detected_score</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>28</precision>
+            <scale>6</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_NUMERIC&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_NUMERIC&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[image_modification_instance_137BE258AABF4761B29A9C956A16F447]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>stdv_detected_score</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[stdv_detected_score (image_modification_instance1)]</local-name>
+            <parent-name>[image_modification_instance1]</parent-name>
+            <remote-alias>stdv_detected_score</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>28</precision>
+            <scale>6</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_NUMERIC&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_NUMERIC&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[image_modification_instance_137BE258AABF4761B29A9C956A16F447]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>image_operation_1</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[image_operation_1 (image_modification_instance1)]</local-name>
+            <parent-name>[image_modification_instance1]</parent-name>
+            <remote-alias>image_operation_1</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>256</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[image_modification_instance_137BE258AABF4761B29A9C956A16F447]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>image_operation_2</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[image_operation_2 (image_modification_instance1)]</local-name>
+            <parent-name>[image_modification_instance1]</parent-name>
+            <remote-alias>image_operation_2</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>256</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[image_modification_instance_137BE258AABF4761B29A9C956A16F447]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>original_image_file</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[original_image_file (image_modification_instance1)]</local-name>
+            <parent-name>[image_modification_instance1]</parent-name>
+            <remote-alias>original_image_file</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>256</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[image_modification_instance_137BE258AABF4761B29A9C956A16F447]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>meta_data</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[meta_data (image_modification_instance_label)]</local-name>
+            <parent-name>[image_modification_instance_label]</parent-name>
+            <remote-alias>meta_data</remote-alias>
+            <ordinal>49</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>8190</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[image_modification_instance_label_9FDA44D6BB0C4978BE1A9D725F5F93B2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tag</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[tag (image_modification_instance_label)]</local-name>
+            <parent-name>[image_modification_instance_label]</parent-name>
+            <remote-alias>tag</remote-alias>
+            <ordinal>50</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>256</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[image_modification_instance_label_9FDA44D6BB0C4978BE1A9D725F5F93B2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>created_at</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[created_at (image_modification_instance_label)]</local-name>
+            <parent-name>[image_modification_instance_label]</parent-name>
+            <remote-alias>created_at</remote-alias>
+            <ordinal>51</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TYPE_TIMESTAMP&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_TYPE_TIMESTAMP&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[image_modification_instance_label_9FDA44D6BB0C4978BE1A9D725F5F93B2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>updated_at</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[updated_at (image_modification_instance_label)]</local-name>
+            <parent-name>[image_modification_instance_label]</parent-name>
+            <remote-alias>updated_at</remote-alias>
+            <ordinal>52</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TYPE_TIMESTAMP&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_TYPE_TIMESTAMP&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[image_modification_instance_label_9FDA44D6BB0C4978BE1A9D725F5F93B2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>id</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[id (image_modification_instance_label)]</local-name>
+            <parent-name>[image_modification_instance_label]</parent-name>
+            <remote-alias>id</remote-alias>
+            <ordinal>53</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[image_modification_instance_label_9FDA44D6BB0C4978BE1A9D725F5F93B2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>description</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[description]</local-name>
+            <parent-name>[image_modification_instance_label]</parent-name>
+            <remote-alias>description</remote-alias>
+            <ordinal>54</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[image_modification_instance_label_9FDA44D6BB0C4978BE1A9D725F5F93B2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>mid</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[mid]</local-name>
+            <parent-name>[image_modification_instance_label]</parent-name>
+            <remote-alias>mid</remote-alias>
+            <ordinal>55</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[image_modification_instance_label_9FDA44D6BB0C4978BE1A9D725F5F93B2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>max_topicality</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[max_topicality]</local-name>
+            <parent-name>[image_modification_instance_label]</parent-name>
+            <remote-alias>max_topicality</remote-alias>
+            <ordinal>56</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_BIT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_BIT&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[image_modification_instance_label_9FDA44D6BB0C4978BE1A9D725F5F93B2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>score</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[score]</local-name>
+            <parent-name>[image_modification_instance_label]</parent-name>
+            <remote-alias>score</remote-alias>
+            <ordinal>57</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>28</precision>
+            <scale>6</scale>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_NUMERIC&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_NUMERIC&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[image_modification_instance_label_9FDA44D6BB0C4978BE1A9D725F5F93B2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>topicality</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[topicality]</local-name>
+            <parent-name>[image_modification_instance_label]</parent-name>
+            <remote-alias>topicality</remote-alias>
+            <ordinal>58</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>28</precision>
+            <scale>6</scale>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_NUMERIC&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_NUMERIC&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[image_modification_instance_label_9FDA44D6BB0C4978BE1A9D725F5F93B2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>image_modification</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[image_modification]</local-name>
+            <parent-name>[image_modification_instance_label]</parent-name>
+            <remote-alias>image_modification</remote-alias>
+            <ordinal>59</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[image_modification_instance_label_9FDA44D6BB0C4978BE1A9D725F5F93B2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>meta_data</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[meta_data (image_modification_instance_object)]</local-name>
+            <parent-name>[image_modification_instance_object]</parent-name>
+            <remote-alias>meta_data</remote-alias>
+            <ordinal>61</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>8190</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[image_modification_instance_object_9C5AA85AC8814C688D8F6D1732845B27]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tag</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[tag (image_modification_instance_object)]</local-name>
+            <parent-name>[image_modification_instance_object]</parent-name>
+            <remote-alias>tag</remote-alias>
+            <ordinal>62</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>256</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[image_modification_instance_object_9C5AA85AC8814C688D8F6D1732845B27]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>created_at</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[created_at (image_modification_instance_object)]</local-name>
+            <parent-name>[image_modification_instance_object]</parent-name>
+            <remote-alias>created_at</remote-alias>
+            <ordinal>63</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TYPE_TIMESTAMP&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_TYPE_TIMESTAMP&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[image_modification_instance_object_9C5AA85AC8814C688D8F6D1732845B27]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>updated_at</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[updated_at (image_modification_instance_object)]</local-name>
+            <parent-name>[image_modification_instance_object]</parent-name>
+            <remote-alias>updated_at</remote-alias>
+            <ordinal>64</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TYPE_TIMESTAMP&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_TYPE_TIMESTAMP&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[image_modification_instance_object_9C5AA85AC8814C688D8F6D1732845B27]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>id</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[id (image_modification_instance_object)]</local-name>
+            <parent-name>[image_modification_instance_object]</parent-name>
+            <remote-alias>id</remote-alias>
+            <ordinal>65</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[image_modification_instance_object_9C5AA85AC8814C688D8F6D1732845B27]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[name]</local-name>
+            <parent-name>[image_modification_instance_object]</parent-name>
+            <remote-alias>name</remote-alias>
+            <ordinal>66</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[image_modification_instance_object_9C5AA85AC8814C688D8F6D1732845B27]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>mid</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[mid (image_modification_instance_object)]</local-name>
+            <parent-name>[image_modification_instance_object]</parent-name>
+            <remote-alias>mid</remote-alias>
+            <ordinal>67</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[image_modification_instance_object_9C5AA85AC8814C688D8F6D1732845B27]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>score</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[score (image_modification_instance_object)]</local-name>
+            <parent-name>[image_modification_instance_object]</parent-name>
+            <remote-alias>score</remote-alias>
+            <ordinal>68</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>28</precision>
+            <scale>6</scale>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_NUMERIC&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_NUMERIC&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[image_modification_instance_object_9C5AA85AC8814C688D8F6D1732845B27]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>image_modification</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[image_modification (image_modification_instance_object)]</local-name>
+            <parent-name>[image_modification_instance_object]</parent-name>
+            <remote-alias>image_modification</remote-alias>
+            <ordinal>69</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[image_modification_instance_object_9C5AA85AC8814C688D8F6D1732845B27]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>meta_data</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[meta_data (image_operation)]</local-name>
+            <parent-name>[image_operation]</parent-name>
+            <remote-alias>meta_data</remote-alias>
+            <ordinal>71</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>8190</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[image_operation_394B1FFF08CA44928A3D65131BD38CFD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tag</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[tag (image_operation)]</local-name>
+            <parent-name>[image_operation]</parent-name>
+            <remote-alias>tag</remote-alias>
+            <ordinal>72</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>256</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[image_operation_394B1FFF08CA44928A3D65131BD38CFD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>created_at</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[created_at (image_operation)]</local-name>
+            <parent-name>[image_operation]</parent-name>
+            <remote-alias>created_at</remote-alias>
+            <ordinal>73</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TYPE_TIMESTAMP&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_TYPE_TIMESTAMP&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[image_operation_394B1FFF08CA44928A3D65131BD38CFD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>updated_at</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[updated_at (image_operation)]</local-name>
+            <parent-name>[image_operation]</parent-name>
+            <remote-alias>updated_at</remote-alias>
+            <ordinal>74</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TYPE_TIMESTAMP&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_TYPE_TIMESTAMP&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[image_operation_394B1FFF08CA44928A3D65131BD38CFD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>code</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[code]</local-name>
+            <parent-name>[image_operation]</parent-name>
+            <remote-alias>code</remote-alias>
+            <ordinal>75</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>256</width>
+            <contains-null>false</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[image_operation_394B1FFF08CA44928A3D65131BD38CFD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>display_name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[display_name]</local-name>
+            <parent-name>[image_operation]</parent-name>
+            <remote-alias>display_name</remote-alias>
+            <ordinal>76</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[image_operation_394B1FFF08CA44928A3D65131BD38CFD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>operation_name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[operation_name]</local-name>
+            <parent-name>[image_operation]</parent-name>
+            <remote-alias>operation_name</remote-alias>
+            <ordinal>77</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[image_operation_394B1FFF08CA44928A3D65131BD38CFD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>operation_type</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[operation_type]</local-name>
+            <parent-name>[image_operation]</parent-name>
+            <remote-alias>operation_type</remote-alias>
+            <ordinal>78</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[image_operation_394B1FFF08CA44928A3D65131BD38CFD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>operation_value</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[operation_value]</local-name>
+            <parent-name>[image_operation]</parent-name>
+            <remote-alias>operation_value</remote-alias>
+            <ordinal>79</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[image_operation_394B1FFF08CA44928A3D65131BD38CFD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>meta_data</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[meta_data (image_operation1)]</local-name>
+            <parent-name>[image_operation1]</parent-name>
+            <remote-alias>meta_data</remote-alias>
+            <ordinal>81</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>8190</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[image_operation_DD7DC14D14CA438DBDB073489C73E406]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tag</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[tag (image_operation1)]</local-name>
+            <parent-name>[image_operation1]</parent-name>
+            <remote-alias>tag</remote-alias>
+            <ordinal>82</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>256</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[image_operation_DD7DC14D14CA438DBDB073489C73E406]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>created_at</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[created_at (image_operation1)]</local-name>
+            <parent-name>[image_operation1]</parent-name>
+            <remote-alias>created_at</remote-alias>
+            <ordinal>83</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TYPE_TIMESTAMP&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_TYPE_TIMESTAMP&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[image_operation_DD7DC14D14CA438DBDB073489C73E406]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>updated_at</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[updated_at (image_operation1)]</local-name>
+            <parent-name>[image_operation1]</parent-name>
+            <remote-alias>updated_at</remote-alias>
+            <ordinal>84</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TYPE_TIMESTAMP&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_TYPE_TIMESTAMP&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[image_operation_DD7DC14D14CA438DBDB073489C73E406]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>code</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[code (image_operation1)]</local-name>
+            <parent-name>[image_operation1]</parent-name>
+            <remote-alias>code</remote-alias>
+            <ordinal>85</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>256</width>
+            <contains-null>false</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[image_operation_DD7DC14D14CA438DBDB073489C73E406]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>display_name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[display_name (image_operation1)]</local-name>
+            <parent-name>[image_operation1]</parent-name>
+            <remote-alias>display_name</remote-alias>
+            <ordinal>86</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[image_operation_DD7DC14D14CA438DBDB073489C73E406]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>operation_name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[operation_name (image_operation1)]</local-name>
+            <parent-name>[image_operation1]</parent-name>
+            <remote-alias>operation_name</remote-alias>
+            <ordinal>87</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[image_operation_DD7DC14D14CA438DBDB073489C73E406]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>operation_type</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[operation_type (image_operation1)]</local-name>
+            <parent-name>[image_operation1]</parent-name>
+            <remote-alias>operation_type</remote-alias>
+            <ordinal>88</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[image_operation_DD7DC14D14CA438DBDB073489C73E406]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>operation_value</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[operation_value (image_operation1)]</local-name>
+            <parent-name>[image_operation1]</parent-name>
+            <remote-alias>operation_value</remote-alias>
+            <ordinal>89</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[image_operation_DD7DC14D14CA438DBDB073489C73E406]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Max Detected Score' datatype='real' name='[Calculation_1086071231645540352]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{FIXED [code (image_file)] : MAX([average_detected_score])}' />
+      </column>
+      <column caption='Is Max Score' datatype='boolean' name='[Calculation_1086071231648522241]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF &#10;    [average_detected_score] = [Calculation_1086071231645540352]&#10;THEN &#10;    TRUE&#10;ELSE&#10;    FALSE&#10;END' />
+      </column>
+      <column caption='Delta From Original Score' datatype='real' name='[Calculation_1086071231694548995]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[average_detected_score] - [average_detected_score (image_modification_instance1)]' />
+      </column>
+      <column caption='Is Original Image' datatype='boolean' name='[Max Detected Score (copy)_1086071231656701954]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF &#10;    [image_operation_1] == NULL &#10;AND &#10;    [image_operation_2] == NULL &#10;THEN&#10;    TRUE&#10;END' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='image_file' datatype='table' name='[__tableau_internal_object_id__].[image_file_B02B073336C042B089757A16ED8FE463]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='original_image_modification_instance' datatype='table' name='[__tableau_internal_object_id__].[image_modification_instance_137BE258AABF4761B29A9C956A16F447]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='image_modification_instance' datatype='table' name='[__tableau_internal_object_id__].[image_modification_instance_9D7641EEC4DD4ABABD3A3750B64443F3]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='image_modification_instance_label' datatype='table' name='[__tableau_internal_object_id__].[image_modification_instance_label_9FDA44D6BB0C4978BE1A9D725F5F93B2]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='image_modification_instance_object' datatype='table' name='[__tableau_internal_object_id__].[image_modification_instance_object_9C5AA85AC8814C688D8F6D1732845B27]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='image_operation1' datatype='table' name='[__tableau_internal_object_id__].[image_operation_394B1FFF08CA44928A3D65131BD38CFD]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='image_operation2' datatype='table' name='[__tableau_internal_object_id__].[image_operation_DD7DC14D14CA438DBDB073489C73E406]' role='measure' type='quantitative' />
+      <column caption='Average Detected Score (Image Modification Instance1)' datatype='real' name='[average_detected_score (image_modification_instance1)]' role='measure' type='quantitative' />
+      <column caption='Average Detected Score' datatype='real' name='[average_detected_score]' role='measure' type='quantitative' />
+      <column caption='Average Label Score (Image Modification Instance1)' datatype='real' name='[average_label_score (image_modification_instance1)]' role='measure' type='quantitative' />
+      <column caption='Average Label Score' datatype='real' name='[average_label_score]' role='measure' type='quantitative' />
+      <column caption='Average Object Score (Image Modification Instance1)' datatype='real' name='[average_object_score (image_modification_instance1)]' role='measure' type='quantitative' />
+      <column caption='Average Object Score' datatype='real' name='[average_object_score]' role='measure' type='quantitative' />
+      <column caption='Code (Image File)' datatype='string' name='[code (image_file)]' role='dimension' type='nominal' />
+      <column caption='Code (Image Operation1)' datatype='string' name='[code (image_operation1)]' role='dimension' type='nominal' />
+      <column caption='Code' datatype='string' name='[code]' role='dimension' type='nominal' />
+      <column caption='Created At (Image File)' datatype='datetime' name='[created_at (image_file)]' role='dimension' type='ordinal' />
+      <column caption='Created At (Image Modification Instance1)' datatype='datetime' name='[created_at (image_modification_instance1)]' role='dimension' type='ordinal' />
+      <column caption='Created At (Image Modification Instance Label)' datatype='datetime' name='[created_at (image_modification_instance_label)]' role='dimension' type='ordinal' />
+      <column caption='Created At (Image Modification Instance Object)' datatype='datetime' name='[created_at (image_modification_instance_object)]' role='dimension' type='ordinal' />
+      <column caption='Created At (Image Operation)' datatype='datetime' name='[created_at (image_operation)]' role='dimension' type='ordinal' />
+      <column caption='Created At (Image Operation1)' datatype='datetime' name='[created_at (image_operation1)]' role='dimension' type='ordinal' />
+      <column caption='Created At' datatype='datetime' name='[created_at]' role='dimension' type='ordinal' />
+      <column caption='Description' datatype='string' name='[description]' role='dimension' type='nominal' />
+      <column caption='Detected Label Count (Image Modification Instance1)' datatype='integer' name='[detected_label_count (image_modification_instance1)]' role='measure' type='quantitative' />
+      <column caption='Detected Label Count' datatype='integer' name='[detected_label_count]' role='measure' type='quantitative' />
+      <column caption='Detected Object Count (Image Modification Instance1)' datatype='integer' name='[detected_object_count (image_modification_instance1)]' role='measure' type='quantitative' />
+      <column caption='Detected Object Count' datatype='integer' name='[detected_object_count]' role='measure' type='quantitative' />
+      <column caption='Detected Total Count (Image Modification Instance1)' datatype='integer' name='[detected_total_count (image_modification_instance1)]' role='measure' type='quantitative' />
+      <column caption='Detected Total Count' datatype='integer' name='[detected_total_count]' role='measure' type='quantitative' />
+      <column caption='Display Name (Image File)' datatype='string' name='[display_name (image_file)]' role='dimension' type='nominal' />
+      <column caption='Display Name (Image Operation1)' datatype='string' name='[display_name (image_operation1)]' role='dimension' type='nominal' />
+      <column caption='Display Name' datatype='string' name='[display_name]' role='dimension' type='nominal' />
+      <column aggregation='Sum' caption='Id (Image Modification Instance1)' datatype='integer' name='[id (image_modification_instance1)]' role='dimension' type='ordinal' />
+      <column caption='Id (Image Modification Instance Label)' datatype='integer' name='[id (image_modification_instance_label)]' role='dimension' type='ordinal' />
+      <column caption='Id (Image Modification Instance Object)' datatype='integer' name='[id (image_modification_instance_object)]' role='dimension' type='ordinal' />
+      <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' caption='Image Modification (Image Modification Instance Object)' datatype='integer' name='[image_modification (image_modification_instance_object)]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' caption='Image Modification' datatype='integer' name='[image_modification]' role='dimension' type='ordinal' />
+      <column caption='Image Operation 1 (Image Modification Instance1)' datatype='string' name='[image_operation_1 (image_modification_instance1)]' role='dimension' type='nominal' />
+      <column caption='Image Operation 1' datatype='string' name='[image_operation_1]' role='dimension' type='nominal' />
+      <column caption='Image Operation 2 (Image Modification Instance1)' datatype='string' name='[image_operation_2 (image_modification_instance1)]' role='dimension' type='nominal' />
+      <column caption='Image Operation 2' datatype='string' name='[image_operation_2]' role='dimension' type='nominal' />
+      <column caption='Max Topicality' datatype='boolean' name='[max_topicality]' role='dimension' type='nominal' />
+      <column caption='Meta Data (Image File)' datatype='string' name='[meta_data (image_file)]' role='dimension' type='nominal' />
+      <column caption='Meta Data (Image Modification Instance1)' datatype='string' name='[meta_data (image_modification_instance1)]' role='dimension' type='nominal' />
+      <column caption='Meta Data (Image Modification Instance Label)' datatype='string' name='[meta_data (image_modification_instance_label)]' role='dimension' type='nominal' />
+      <column caption='Meta Data (Image Modification Instance Object)' datatype='string' name='[meta_data (image_modification_instance_object)]' role='dimension' type='nominal' />
+      <column caption='Meta Data (Image Operation)' datatype='string' name='[meta_data (image_operation)]' role='dimension' type='nominal' />
+      <column caption='Meta Data (Image Operation1)' datatype='string' name='[meta_data (image_operation1)]' role='dimension' type='nominal' />
+      <column caption='Meta Data' datatype='string' name='[meta_data]' role='dimension' type='nominal' />
+      <column caption='Mid (Image Modification Instance Object)' datatype='string' name='[mid (image_modification_instance_object)]' role='dimension' type='nominal' />
+      <column caption='Mid' datatype='string' name='[mid]' role='dimension' type='nominal' />
+      <column caption='Modification Description (Image Modification Instance1)' datatype='string' name='[modification_description (image_modification_instance1)]' role='dimension' type='nominal' />
+      <column caption='Modification Description' datatype='string' name='[modification_description]' role='dimension' type='nominal' />
+      <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+      <column caption='Operation Name (Image Operation1)' datatype='string' name='[operation_name (image_operation1)]' role='dimension' type='nominal' />
+      <column caption='Operation Name' datatype='string' name='[operation_name]' role='dimension' type='nominal' />
+      <column caption='Operation Type (Image Operation1)' datatype='string' name='[operation_type (image_operation1)]' role='dimension' type='nominal' />
+      <column caption='Operation Type' datatype='string' name='[operation_type]' role='dimension' type='nominal' />
+      <column caption='Operation Value (Image Operation1)' datatype='integer' name='[operation_value (image_operation1)]' role='measure' type='quantitative' />
+      <column caption='Operation Value' datatype='integer' name='[operation_value]' role='measure' type='quantitative' />
+      <column caption='Original Image File (Image Modification Instance1)' datatype='string' name='[original_image_file (image_modification_instance1)]' role='dimension' type='nominal' />
+      <column caption='Original Image File' datatype='string' name='[original_image_file]' role='dimension' type='nominal' />
+      <column aggregation='Sum' datatype='integer' name='[original_image_modification]' role='dimension' type='ordinal' />
+      <column caption='Score (Image Modification Instance Object)' datatype='real' name='[score (image_modification_instance_object)]' role='measure' type='quantitative' />
+      <column caption='Score' datatype='real' name='[score]' role='measure' type='quantitative' />
+      <column caption='Stdv Detected Score (Image Modification Instance1)' datatype='real' name='[stdv_detected_score (image_modification_instance1)]' role='measure' type='quantitative' />
+      <column caption='Stdv Detected Score' datatype='real' name='[stdv_detected_score]' role='measure' type='quantitative' />
+      <column caption='Stdv Label Score (Image Modification Instance1)' datatype='real' name='[stdv_label_score (image_modification_instance1)]' role='measure' type='quantitative' />
+      <column caption='Stdv Label Score' datatype='real' name='[stdv_label_score]' role='measure' type='quantitative' />
+      <column caption='Stdv Object Score (Image Modification Instance1)' datatype='real' name='[stdv_object_score (image_modification_instance1)]' role='measure' type='quantitative' />
+      <column caption='Stdv Object Score' datatype='real' name='[stdv_object_score]' role='measure' type='quantitative' />
+      <column caption='Subject Image File Name (Image Modification Instance1)' datatype='string' name='[subject_image_file_name (image_modification_instance1)]' role='dimension' type='nominal' />
+      <column caption='Subject Image File Name' datatype='string' name='[subject_image_file_name]' role='dimension' type='nominal' />
+      <column caption='Tag (Image File)' datatype='string' name='[tag (image_file)]' role='dimension' type='nominal' />
+      <column caption='Tag (Image Modification Instance1)' datatype='string' name='[tag (image_modification_instance1)]' role='dimension' type='nominal' />
+      <column caption='Tag (Image Modification Instance Label)' datatype='string' name='[tag (image_modification_instance_label)]' role='dimension' type='nominal' />
+      <column caption='Tag (Image Modification Instance Object)' datatype='string' name='[tag (image_modification_instance_object)]' role='dimension' type='nominal' />
+      <column caption='Tag (Image Operation)' datatype='string' name='[tag (image_operation)]' role='dimension' type='nominal' />
+      <column caption='Tag (Image Operation1)' datatype='string' name='[tag (image_operation1)]' role='dimension' type='nominal' />
+      <column caption='Tag' datatype='string' name='[tag]' role='dimension' type='nominal' />
+      <column caption='Topicality' datatype='real' name='[topicality]' role='measure' type='quantitative' />
+      <column caption='Updated At (Image File)' datatype='datetime' name='[updated_at (image_file)]' role='dimension' type='ordinal' />
+      <column caption='Updated At (Image Modification Instance1)' datatype='datetime' name='[updated_at (image_modification_instance1)]' role='dimension' type='ordinal' />
+      <column caption='Updated At (Image Modification Instance Label)' datatype='datetime' name='[updated_at (image_modification_instance_label)]' role='dimension' type='ordinal' />
+      <column caption='Updated At (Image Modification Instance Object)' datatype='datetime' name='[updated_at (image_modification_instance_object)]' role='dimension' type='ordinal' />
+      <column caption='Updated At (Image Operation)' datatype='datetime' name='[updated_at (image_operation)]' role='dimension' type='ordinal' />
+      <column caption='Updated At (Image Operation1)' datatype='datetime' name='[updated_at (image_operation1)]' role='dimension' type='ordinal' />
+      <column caption='Updated At' datatype='datetime' name='[updated_at]' role='dimension' type='ordinal' />
+      <column-instance column='[average_detected_score]' derivation='Avg' name='[avg:average_detected_score:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[stdv_detected_score]' derivation='Avg' name='[avg:stdv_detected_score:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[average_detected_score]' derivation='Count' name='[cnt:average_detected_score:qk]' pivot='key' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1v0nxj811pgn73175sx4k1rgcggz].[avg:average_detected_score:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1v0nxj811pgn73175sx4k1rgcggz].[cnt:average_detected_score:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1v0nxj811pgn73175sx4k1rgcggz].[avg:stdv_detected_score:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='meta_data (image_modification_instance_label)' />
+        <field-sort-custom-order field='tag (image_modification_instance_label)' />
+        <field-sort-custom-order field='created_at (image_modification_instance_label)' />
+        <field-sort-custom-order field='updated_at (image_modification_instance_label)' />
+        <field-sort-custom-order field='id (image_modification_instance_label)' />
+        <field-sort-custom-order field='description' />
+        <field-sort-custom-order field='mid' />
+        <field-sort-custom-order field='max_topicality' />
+        <field-sort-custom-order field='score' />
+        <field-sort-custom-order field='topicality' />
+        <field-sort-custom-order field='image_modification' />
+      </field-sort-info>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='image_file' id='image_file_B02B073336C042B089757A16ED8FE463'>
+            <properties context=''>
+              <relation connection='postgres.0feerir0h28mry132hrc30kd7ygg' name='image_file' table='[public].[image_file]' type='table' />
+            </properties>
+          </object>
+          <object caption='original_image_modification_instance' id='image_modification_instance_137BE258AABF4761B29A9C956A16F447'>
+            <properties context=''>
+              <relation connection='postgres.0feerir0h28mry132hrc30kd7ygg' name='image_modification_instance1' table='[public].[image_modification_instance]' type='table' />
+            </properties>
+          </object>
+          <object caption='image_modification_instance' id='image_modification_instance_9D7641EEC4DD4ABABD3A3750B64443F3'>
+            <properties context=''>
+              <relation connection='postgres.0feerir0h28mry132hrc30kd7ygg' name='image_modification_instance' table='[public].[image_modification_instance]' type='table' />
+            </properties>
+          </object>
+          <object caption='image_modification_instance_label' id='image_modification_instance_label_9FDA44D6BB0C4978BE1A9D725F5F93B2'>
+            <properties context=''>
+              <relation connection='postgres.0feerir0h28mry132hrc30kd7ygg' name='image_modification_instance_label' table='[public].[image_modification_instance_label]' type='table' />
+            </properties>
+          </object>
+          <object caption='image_modification_instance_object' id='image_modification_instance_object_9C5AA85AC8814C688D8F6D1732845B27'>
+            <properties context=''>
+              <relation connection='postgres.0feerir0h28mry132hrc30kd7ygg' name='image_modification_instance_object' table='[public].[image_modification_instance_object]' type='table' />
+            </properties>
+          </object>
+          <object caption='image_operation1' id='image_operation_394B1FFF08CA44928A3D65131BD38CFD'>
+            <properties context=''>
+              <relation connection='postgres.0feerir0h28mry132hrc30kd7ygg' name='image_operation' table='[public].[image_operation]' type='table' />
+            </properties>
+          </object>
+          <object caption='image_operation2' id='image_operation_DD7DC14D14CA438DBDB073489C73E406'>
+            <properties context=''>
+              <relation connection='postgres.0feerir0h28mry132hrc30kd7ygg' name='image_operation1' table='[public].[image_operation]' type='table' />
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[original_image_file]' />
+              <expression op='[code (image_file)]' />
+            </expression>
+            <first-end-point object-id='image_modification_instance_9D7641EEC4DD4ABABD3A3750B64443F3' />
+            <second-end-point _.fcp.ObjectModelRelationshipPerfOptions.true...is-db-set-unique-key='true' object-id='image_file_B02B073336C042B089757A16ED8FE463' unique-key='true' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[original_image_modification]' />
+              <expression op='[id (image_modification_instance1)]' />
+            </expression>
+            <first-end-point object-id='image_file_B02B073336C042B089757A16ED8FE463' />
+            <second-end-point _.fcp.ObjectModelRelationshipPerfOptions.true...is-db-set-unique-key='true' object-id='image_modification_instance_137BE258AABF4761B29A9C956A16F447' unique-key='true' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[id]' />
+              <expression op='[image_modification]' />
+            </expression>
+            <first-end-point _.fcp.ObjectModelRelationshipPerfOptions.true...is-db-set-unique-key='true' object-id='image_modification_instance_9D7641EEC4DD4ABABD3A3750B64443F3' unique-key='true' />
+            <second-end-point object-id='image_modification_instance_label_9FDA44D6BB0C4978BE1A9D725F5F93B2' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[id]' />
+              <expression op='[image_modification (image_modification_instance_object)]' />
+            </expression>
+            <first-end-point _.fcp.ObjectModelRelationshipPerfOptions.true...is-db-set-unique-key='true' object-id='image_modification_instance_9D7641EEC4DD4ABABD3A3750B64443F3' unique-key='true' />
+            <second-end-point object-id='image_modification_instance_object_9C5AA85AC8814C688D8F6D1732845B27' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[image_operation_1]' />
+              <expression op='[code]' />
+            </expression>
+            <first-end-point object-id='image_modification_instance_9D7641EEC4DD4ABABD3A3750B64443F3' />
+            <second-end-point _.fcp.ObjectModelRelationshipPerfOptions.true...is-db-set-unique-key='true' object-id='image_operation_394B1FFF08CA44928A3D65131BD38CFD' unique-key='true' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[image_operation_2]' />
+              <expression op='[code (image_operation1)]' />
+            </expression>
+            <first-end-point object-id='image_modification_instance_9D7641EEC4DD4ABABD3A3750B64443F3' />
+            <second-end-point _.fcp.ObjectModelRelationshipPerfOptions.true...is-db-set-unique-key='true' object-id='image_operation_DD7DC14D14CA438DBDB073489C73E406' unique-key='true' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='AllModifications'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='image_modification_instance+ (app-dev)' name='federated.1v0nxj811pgn73175sx4k1rgcggz' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1v0nxj811pgn73175sx4k1rgcggz'>
+            <column caption='Average Detected Score' datatype='real' name='[average_detected_score]' role='measure' type='quantitative' />
+            <column-instance column='[average_detected_score]' derivation='Avg' name='[avg:average_detected_score:qk]' pivot='key' type='quantitative' />
+            <column caption='Modification Description' datatype='string' name='[modification_description]' role='dimension' type='nominal' />
+            <column-instance column='[modification_description]' derivation='None' name='[none:modification_description:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1v0nxj811pgn73175sx4k1rgcggz].[none:modification_description:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1v0nxj811pgn73175sx4k1rgcggz].[avg:average_detected_score:qk]' shelf='columns' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='height' field='[federated.1v0nxj811pgn73175sx4k1rgcggz].[none:modification_description:nk]' value='247' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='pane'>
+                <format attr='minheight' value='488' />
+                <format attr='maxheight' value='488' />
+                <format attr='minwidth' value='1340' />
+                <format attr='maxwidth' value='1340' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1v0nxj811pgn73175sx4k1rgcggz].[avg:average_detected_score:qk]</rows>
+        <cols>[federated.1v0nxj811pgn73175sx4k1rgcggz].[none:modification_description:nk]</cols>
+      </table>
+      <simple-id uuid='{1BD07E36-01AE-4A51-BE3A-C9BE7C862A3C}' />
+    </worksheet>
+    <worksheet name='AllModifications+STDEV'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='image_modification_instance+ (app-dev)' name='federated.1v0nxj811pgn73175sx4k1rgcggz' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1v0nxj811pgn73175sx4k1rgcggz'>
+            <column caption='Average Detected Score' datatype='real' name='[average_detected_score]' role='measure' type='quantitative' />
+            <column-instance column='[average_detected_score]' derivation='Avg' name='[avg:average_detected_score:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[stdv_detected_score]' derivation='Avg' name='[avg:stdv_detected_score:qk]' pivot='key' type='quantitative' />
+            <column caption='Modification Description' datatype='string' name='[modification_description]' role='dimension' type='nominal' />
+            <column-instance column='[modification_description]' derivation='None' name='[none:modification_description:nk]' pivot='key' type='nominal' />
+            <column caption='Stdv Detected Score' datatype='real' name='[stdv_detected_score]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1v0nxj811pgn73175sx4k1rgcggz].[none:modification_description:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1v0nxj811pgn73175sx4k1rgcggz].[avg:average_detected_score:qk]' shelf='columns' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='height' field='[federated.1v0nxj811pgn73175sx4k1rgcggz].[none:modification_description:nk]' value='247' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='pane'>
+                <format attr='minheight' value='488' />
+                <format attr='maxheight' value='488' />
+                <format attr='minwidth' value='1340' />
+                <format attr='maxwidth' value='1340' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1v0nxj811pgn73175sx4k1rgcggz].[avg:average_detected_score:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='pane'>
+                <format attr='minheight' value='488' />
+                <format attr='maxheight' value='488' />
+                <format attr='minwidth' value='1340' />
+                <format attr='maxwidth' value='1340' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1v0nxj811pgn73175sx4k1rgcggz].[avg:stdv_detected_score:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='pane'>
+                <format attr='minheight' value='488' />
+                <format attr='maxheight' value='488' />
+                <format attr='minwidth' value='1340' />
+                <format attr='maxwidth' value='1340' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1v0nxj811pgn73175sx4k1rgcggz].[avg:average_detected_score:qk] + [federated.1v0nxj811pgn73175sx4k1rgcggz].[avg:stdv_detected_score:qk])</rows>
+        <cols>[federated.1v0nxj811pgn73175sx4k1rgcggz].[none:modification_description:nk]</cols>
+      </table>
+      <simple-id uuid='{E25CA541-F77A-4F12-9946-4047E7CA7AA2}' />
+    </worksheet>
+    <worksheet name='Frequent Modifications'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='image_modification_instance+ (app-dev)' name='federated.1v0nxj811pgn73175sx4k1rgcggz' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1v0nxj811pgn73175sx4k1rgcggz'>
+            <column caption='Max Detected Score' datatype='real' name='[Calculation_1086071231645540352]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='{FIXED [code (image_file)] : MAX([average_detected_score])}' />
+            </column>
+            <column caption='Is Max Score' datatype='boolean' name='[Calculation_1086071231648522241]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF &#10;    [average_detected_score] = [Calculation_1086071231645540352]&#10;THEN &#10;    TRUE&#10;ELSE&#10;    FALSE&#10;END' />
+            </column>
+            <column caption='Average Detected Score' datatype='real' name='[average_detected_score]' role='measure' type='quantitative' />
+            <column-instance column='[average_detected_score]' derivation='Count' name='[cnt:average_detected_score:qk]' pivot='key' type='quantitative' />
+            <column caption='Code (Image File)' datatype='string' name='[code (image_file)]' role='dimension' type='nominal' />
+            <column caption='Modification Description' datatype='string' name='[modification_description]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_1086071231648522241]' derivation='None' name='[none:Calculation_1086071231648522241:nk]' pivot='key' type='nominal' />
+            <column-instance column='[modification_description]' derivation='None' name='[none:modification_description:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1v0nxj811pgn73175sx4k1rgcggz].[none:Calculation_1086071231648522241:nk]'>
+            <groupfilter function='member' level='[none:Calculation_1086071231648522241:nk]' member='true' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1v0nxj811pgn73175sx4k1rgcggz].[none:modification_description:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1v0nxj811pgn73175sx4k1rgcggz].[cnt:average_detected_score:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1v0nxj811pgn73175sx4k1rgcggz].[none:Calculation_1086071231648522241:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1v0nxj811pgn73175sx4k1rgcggz].[cnt:average_detected_score:qk]</rows>
+        <cols>[federated.1v0nxj811pgn73175sx4k1rgcggz].[none:modification_description:nk]</cols>
+      </table>
+      <simple-id uuid='{74848496-243C-474A-8F2F-2BD23EA846D2}' />
+    </worksheet>
+    <worksheet name='ModificationDeltas'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='image_modification_instance+ (app-dev)' name='federated.1v0nxj811pgn73175sx4k1rgcggz' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1v0nxj811pgn73175sx4k1rgcggz'>
+            <column caption='Delta From Original Score' datatype='real' name='[Calculation_1086071231694548995]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[average_detected_score] - [average_detected_score (image_modification_instance1)]' />
+            </column>
+            <column caption='Average Detected Score (Image Modification Instance1)' datatype='real' name='[average_detected_score (image_modification_instance1)]' role='measure' type='quantitative' />
+            <column caption='Average Detected Score' datatype='real' name='[average_detected_score]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_1086071231694548995]' derivation='Avg' name='[avg:Calculation_1086071231694548995:qk]' pivot='key' type='quantitative' />
+            <column caption='Modification Description' datatype='string' name='[modification_description]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_1086071231694548995]' derivation='None' name='[none:Calculation_1086071231694548995:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[modification_description]' derivation='None' name='[none:modification_description:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.1v0nxj811pgn73175sx4k1rgcggz].[none:Calculation_1086071231694548995:qk]' included-values='in-range'>
+            <min>1.0e-12</min>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1v0nxj811pgn73175sx4k1rgcggz].[none:modification_description:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1v0nxj811pgn73175sx4k1rgcggz].[avg:Calculation_1086071231694548995:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1v0nxj811pgn73175sx4k1rgcggz].[none:Calculation_1086071231694548995:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='height' field='[federated.1v0nxj811pgn73175sx4k1rgcggz].[none:modification_description:nk]' value='235' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='pane'>
+                <format attr='minheight' value='500' />
+                <format attr='maxheight' value='500' />
+                <format attr='minwidth' value='1340' />
+                <format attr='maxwidth' value='1340' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1v0nxj811pgn73175sx4k1rgcggz].[avg:Calculation_1086071231694548995:qk]</rows>
+        <cols>[federated.1v0nxj811pgn73175sx4k1rgcggz].[none:modification_description:nk]</cols>
+      </table>
+      <simple-id uuid='{E504DB77-0B13-4782-8C8B-8F91A288607A}' />
+    </worksheet>
+    <worksheet name='Top Image Modifications'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='image_modification_instance+ (app-dev)' name='federated.1v0nxj811pgn73175sx4k1rgcggz' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1v0nxj811pgn73175sx4k1rgcggz'>
+            <column caption='Max Detected Score' datatype='real' name='[Calculation_1086071231645540352]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='{FIXED [code (image_file)] : MAX([average_detected_score])}' />
+            </column>
+            <column caption='Is Max Score' datatype='boolean' name='[Calculation_1086071231648522241]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF &#10;    [average_detected_score] = [Calculation_1086071231645540352]&#10;THEN &#10;    TRUE&#10;ELSE&#10;    FALSE&#10;END' />
+            </column>
+            <column caption='Average Detected Score' datatype='real' name='[average_detected_score]' role='measure' type='quantitative' />
+            <column-instance column='[average_detected_score]' derivation='Avg' name='[avg:average_detected_score:qk]' pivot='key' type='quantitative' />
+            <column caption='Code (Image File)' datatype='string' name='[code (image_file)]' role='dimension' type='nominal' />
+            <column caption='Modification Description' datatype='string' name='[modification_description]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_1086071231648522241]' derivation='None' name='[none:Calculation_1086071231648522241:nk]' pivot='key' type='nominal' />
+            <column-instance column='[code (image_file)]' derivation='None' name='[none:code (image_file):nk]' pivot='key' type='nominal' />
+            <column-instance column='[modification_description]' derivation='None' name='[none:modification_description:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1v0nxj811pgn73175sx4k1rgcggz].[none:Calculation_1086071231648522241:nk]'>
+            <groupfilter function='member' level='[none:Calculation_1086071231648522241:nk]' member='true' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1v0nxj811pgn73175sx4k1rgcggz].[none:modification_description:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1v0nxj811pgn73175sx4k1rgcggz].[avg:average_detected_score:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1v0nxj811pgn73175sx4k1rgcggz].[none:Calculation_1086071231648522241:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.1v0nxj811pgn73175sx4k1rgcggz].[none:modification_description:nk]' value='240' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>([federated.1v0nxj811pgn73175sx4k1rgcggz].[none:code (image_file):nk] / [federated.1v0nxj811pgn73175sx4k1rgcggz].[none:modification_description:nk])</rows>
+        <cols>[federated.1v0nxj811pgn73175sx4k1rgcggz].[avg:average_detected_score:qk]</cols>
+      </table>
+      <simple-id uuid='{EC0A736D-7E83-470F-A86E-46CB81AF2476}' />
+    </worksheet>
+    <worksheet name='Top Image Modifications+STDEV'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='image_modification_instance+ (app-dev)' name='federated.1v0nxj811pgn73175sx4k1rgcggz' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1v0nxj811pgn73175sx4k1rgcggz'>
+            <column caption='Max Detected Score' datatype='real' name='[Calculation_1086071231645540352]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='{FIXED [code (image_file)] : MAX([average_detected_score])}' />
+            </column>
+            <column caption='Is Max Score' datatype='boolean' name='[Calculation_1086071231648522241]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF &#10;    [average_detected_score] = [Calculation_1086071231645540352]&#10;THEN &#10;    TRUE&#10;ELSE&#10;    FALSE&#10;END' />
+            </column>
+            <column caption='Average Detected Score' datatype='real' name='[average_detected_score]' role='measure' type='quantitative' />
+            <column-instance column='[average_detected_score]' derivation='Avg' name='[avg:average_detected_score:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[stdv_detected_score]' derivation='Avg' name='[avg:stdv_detected_score:qk]' pivot='key' type='quantitative' />
+            <column caption='Code (Image File)' datatype='string' name='[code (image_file)]' role='dimension' type='nominal' />
+            <column caption='Modification Description' datatype='string' name='[modification_description]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_1086071231648522241]' derivation='None' name='[none:Calculation_1086071231648522241:nk]' pivot='key' type='nominal' />
+            <column-instance column='[code (image_file)]' derivation='None' name='[none:code (image_file):nk]' pivot='key' type='nominal' />
+            <column-instance column='[modification_description]' derivation='None' name='[none:modification_description:nk]' pivot='key' type='nominal' />
+            <column caption='Stdv Detected Score' datatype='real' name='[stdv_detected_score]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1v0nxj811pgn73175sx4k1rgcggz].[none:Calculation_1086071231648522241:nk]'>
+            <groupfilter function='member' level='[none:Calculation_1086071231648522241:nk]' member='true' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1v0nxj811pgn73175sx4k1rgcggz].[none:modification_description:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1v0nxj811pgn73175sx4k1rgcggz].[avg:average_detected_score:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1v0nxj811pgn73175sx4k1rgcggz].[none:Calculation_1086071231648522241:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.1v0nxj811pgn73175sx4k1rgcggz].[none:modification_description:nk]' value='240' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.1v0nxj811pgn73175sx4k1rgcggz].[avg:average_detected_score:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.1v0nxj811pgn73175sx4k1rgcggz].[avg:stdv_detected_score:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>([federated.1v0nxj811pgn73175sx4k1rgcggz].[none:code (image_file):nk] / [federated.1v0nxj811pgn73175sx4k1rgcggz].[none:modification_description:nk])</rows>
+        <cols>([federated.1v0nxj811pgn73175sx4k1rgcggz].[avg:average_detected_score:qk] + [federated.1v0nxj811pgn73175sx4k1rgcggz].[avg:stdv_detected_score:qk])</cols>
+      </table>
+      <simple-id uuid='{CA3B212A-456A-49B1-B13A-200440C2D4DA}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Top Image Modifications'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{FA740AAB-D905-4852-98AB-A59FF3B91746}' />
+    </window>
+    <window class='worksheet' name='Top Image Modifications+STDEV'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B1E95578-7D5B-4866-A513-453E94ED82C4}' />
+    </window>
+    <window class='worksheet' name='Frequent Modifications'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{42BA4DF4-8F8B-4CA3-82E3-BEC2CD8E7B1E}' />
+    </window>
+    <window class='worksheet' name='AllModifications'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+      </viewpoint>
+      <simple-id uuid='{6B168153-501A-44C9-B98B-D548CB61699E}' />
+    </window>
+    <window class='worksheet' name='AllModifications+STDEV'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-height' />
+      </viewpoint>
+      <simple-id uuid='{311C83F3-F0DC-4BEB-AFCD-81B53F56B82E}' />
+    </window>
+    <window class='worksheet' name='ModificationDeltas'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+      </viewpoint>
+      <simple-id uuid='{22A926B6-E0B4-4BF4-AA0D-6A56E6E7F1DD}' />
+    </window>
+  </windows>
+</workbook>

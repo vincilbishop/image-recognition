@@ -50,7 +50,9 @@ export class ImageModificationInstances1651938419322
       newMod.originalImageFile = file;
       newMod.subjectImageFileName = file.code;
       newMod.modificationDescription = `Unmodified original image`;
-      modsToSave.push(newMod);
+      await modDb.save(newMod, { reload: true });
+      file.originalModification = newMod;
+      await fileDb.save(file);
     }
 
     await modDb.save(modsToSave);

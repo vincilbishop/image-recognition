@@ -7,15 +7,15 @@ This repository was prepared for the [IS&T Archiving Conference 2022](https://ww
 Image recognition logic for testing.
 
 The logic uses the following filters in 25% incremental increases:
--Contrast (0%, 25%, 50%, 75%, 100%)
--Background Subtraction (0%, 25%, 50%, 75%, 100%)
--Sharpen (0%, 25%, 50%, 75%, 100%)
--Despeckle (0%, 25%, 50%, 75%, 100%)
+- Contrast (0%, 25%, 50%, 75%, 100%)
+- Background Removal (100%)
+- Sharpen (0%, 25%, 50%, 75%, 100%)
+- Despeckle (100%)
 The ideal code would run:
 1. All possible combinations of these image alterations on a batch of photos in a folder we designate and save the new altered photos.
 2. Use the google vision API to return the top classification results.
 I can separately run all the original photos for our baseline and write up an analysis of the end results.
-This should produce 1,820 alterations from which I can do some predictive modeling to focus on which more specific combinations
+This should produce 990 alterations from which predictive modeling can be performed to focus on which more specific combinations
 would perform the best.
 For the photo sets, I was thinking of using a batch of aerial aircraft or simply vehicle photos since this could have significant impac
 
