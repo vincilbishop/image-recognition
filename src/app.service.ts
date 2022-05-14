@@ -36,7 +36,7 @@ export class AppService {
     // Get Image Modifications
     const mods = await ImageModificationInstance.find({});
 
-    const limit = pLimit(25);
+    const limit = pLimit(10);
     const input = [];
 
     for (const mod of mods) {
